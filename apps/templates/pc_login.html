@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>PC端微信扫码登录</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/iconfont/iconfont.css" rel="stylesheet">
+    <link href="/static/css/custom.css" rel="stylesheet">
+    <link href="/static/css/pc-custom.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+            <div class="panel cs-loginDialog">               
+                                                          
+                                  <div class="panel-body">
+                                      <p class="cs-pc-loginTitle">欢迎扫码登录后台管理页面</p>
+                                      <div class="cs-erweimaImgField">
+                                          <img id="loginqrcode" src="{{qrcode_url}}" /> 
+                                      </div>  
+                                  </div>
+                                  <div class="panel-footer">            
+                                      <p style="display: inline-block;">
+                                          <span class="iconfont icon-tishixinxi font20 text-common"></span>提示：请使用
+                                          <span style="color: #CC0033">微信“扫一扫”</span>功能，扫描该二维码登录。
+                                      </p>                 
+                                  </div>     
+                      
+                </div>
+  
+  <script type="text/javascript" src="/static/js/jquery-1.11.2.min.js"></script>              
+  <script type="text/javascript" src="/static/js/pc-login.js?ver=0.10"></script>
+  </body>
+</html>
+

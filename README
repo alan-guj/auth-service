@@ -1,0 +1,20 @@
+oauth服务安装部署过程
+1，从SVN上checkout代码
+2，安装Python运行环境（可选）
+sudo yum install python34
+sudo yum install python34-devel
+sudo yum install libjpeg-turbo-devel
+sudo yum install zlib-devel
+3，建立python虚拟运行环境
+virtualenv -p /usr/bin/python3 flask
+或者 
+virtualenv -p /usr/bin/python3.4 flask
+4，安装所需要的python库
+sh  install_flask.sh
+5，安装微信的接口库
+cd python-weixin-master
+../flask/bin/python ./setup.py install
+6，修改配置文件
+从config.py 复制一份自己的配置文件，如config_test.py
+在run.py中修改要加载的配置文件
+app.config.from_object('config_test')  
